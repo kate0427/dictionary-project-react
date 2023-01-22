@@ -22,11 +22,31 @@ export default function Dictionary() {
     setKeyword(event.target.value);
   }
   return (
-    <div className="Dictionary">
-      <form onSubmit={search}>
-        <input type="search" onChange={handleKeywordChange}></input>
-        <input type="submit" className="searchbutton" value="🔍"></input>
-      </form>
+    <div className=" container Dictionary">
+      <section>
+        <form onSubmit={search}>
+          {" "}
+          <div className="row">
+            <div className="col-sm text-center">
+              <input
+                className="searchbar"
+                type="search"
+                onChange={handleKeywordChange}
+                placeholder="Type the word..."
+                style={{ width: "80%" }}
+              ></input>
+            </div>
+            <div className="col-sm text-center">
+              <input
+                type="submit"
+                className="searchbutton "
+                value="Search🔍"
+                style={{ width: "50%" }}
+              ></input>
+            </div>{" "}
+          </div>
+        </form>
+      </section>
       <Results results={results} />
     </div>
   );

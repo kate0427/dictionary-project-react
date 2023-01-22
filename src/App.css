@@ -1,5 +1,17 @@
+.App {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .App header,
 .App footer {
   text-align: center;
   margin: 30px 0;
+}
+
+.App h1 {
+  color: #142d4c;
+}
+.App a {
+  color: #385170;
 }

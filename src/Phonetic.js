@@ -12,11 +12,8 @@ export default function Phonetic(props) {
         showJumpControls={false}
         autoPlayAfterSrcChange={false}
         customAdditionalControls={[]}
-        style={{
-          width: "300px",
-        }}
       />
-      <br />
+
       {props.phonetic.text}
     </div>
   );

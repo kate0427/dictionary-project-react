@@ -1,0 +1,35 @@
+.Dictionary section {
+  background: white;
+  padding: 40px;
+  border-radius: 5px;
+  box-shadow: 0px 3px 10px rgba(56, 81, 112, 0.1);
+  margin: 20px;
+}
+
+.Dictionary .searchbar {
+  border: 2px solid #9fd3c7;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.Dictionary .searchbar:focus {
+  border-color: #385170;
+  outline: none;
+}
+
+.Dictionary .searchbutton {
+  background-color: #9fd3c7;
+  border: 2px solid #385170;
+  border-radius: 5px;
+  height: 40px;
+  padding: 5px 0;
+}
+
+@media (max-width: 575px) {
+  .Dictionary .searchbutton {
+    margin-top: 25px;
+  }
+  .Meaning {
+    text-align: justify;
+  }
+}
